@@ -9,18 +9,13 @@
   body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    background-image: var(--bg-image);
-    background-color: var(--bg-color);
-
+  
     --primary-text-color: #181820;
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
     --border-color: #ff9a0045;
     --text-decoration-color: #ff9a00;
-    --bg-color: orange;
-    --bg-color-fade: rgb(250, 239, 220);
-    --bg-image: liner-gradient( to bottom, var(--bg-color), var(--bg-color-fade));
   }
   
   .container {
@@ -44,10 +39,9 @@
   .resume {
     margin: 50px auto;
     border: 1px solid #f5f5f5;
-    box-shadow: 1px 1px 7px 7px #0f0f0f;
+    box-shadow: 1px 1px 7px 7px #f5f5f5;
     padding: 30px 0;
     max-width: 900px;
-    background-color: var(--bg-color-fade);
   }
   
   .resume__block {
@@ -110,10 +104,6 @@
   display: flex;
   justify-content: start;
 }
-.contact-info__item span:hover {
-  color: var(--bg-color);
-  border-bottom: 2px solid var(--bg-color);
-}
 
 .contact-info__item:not(:last-child) {
   margin-bottom: 20px;
@@ -137,8 +127,8 @@
 
 .contact-info__avatar {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border: 3px solid;
   border-color: var(--text-decoration-color);
@@ -171,21 +161,14 @@
     color: var(--secondary-text-color);
     text-align: justify;
   }
-
-  .skills {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
   
   .skills__header {
     color: var(--secondary-text-color);
-    text-align: left;
+    text-align: center;
     margin-bottom: 15px;
   }
   
-  .skills__list {
+  .skills__text {
     color: var(--secondary-text-color);
     text-align: justify;
   }
@@ -271,16 +254,7 @@
   .additional-info__education-university-name {
     color: var(--secondary-text-color);
   }
-
-  .additional-info__education-course-name{
-    color: var(--secondary-text-color);
-  }
-
-  .additional-info__education-source-name{
-    color: var(--secondary-text-color);
-    font-size: 10px;
-  }
-
+  
   .additional-info__languages {
     margin-bottom: 20px;
   }
